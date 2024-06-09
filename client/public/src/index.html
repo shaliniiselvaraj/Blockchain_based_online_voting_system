@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <title>Register</title>
+    <style>
+        body {
+            background: url('bg.jpg') no-repeat fixed center;
+            background-size: 100% 100%;
+        }
+
+        .button {
+            background-color: rgb(56, 106, 114);
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" id="form">
+            <h1 style="color:rgb(56, 106, 114);padding-bottom: 25px;">Voter Registration Form</h1>
+            <div class="input-group">
+                <label style="color:rgb(56, 106, 114)" for="username">Aadhar Number</label>
+                <input type="text" id="username" name="username" value>
+                <div class="error"></div>
+            </div>
+
+            <button class="button" style="background-color:rgb(56, 106, 114) " type="submit"
+                onclick="validate(event, username)">Register</button>
+        </form>
+    </div>
+</body>
+<script>
+    const username = document.getElementById("#username");
+</script>
+
+</html>
